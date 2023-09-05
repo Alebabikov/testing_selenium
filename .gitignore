@@ -16,6 +16,7 @@ tests/__pycache__
 __pycache__/*
 generic/config/__pycache__
 generic/__pycache__
+/actions-runner/
 
 
 # Byte-compiled / optimized / DLL files
