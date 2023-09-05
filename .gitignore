@@ -19,6 +19,7 @@ generic/__pycache__
 /actions-runner/
 
 
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -72,3 +73,5 @@ docs/_build/
 .pytest_cache
 reports/allure-reports
 reports/pytest-reports
+allure-report
+results
