@@ -20,7 +20,7 @@ jobs:
       - name: Run tests
         run: pytest tests/test_p.py::test_button_exist --alluredir=allure-results
       - name: Store allure results
-        uses: action/upload-artifact@v3
+        uses: actions/upload-artifact@v3
         with:
           name: allure-results
           path:
