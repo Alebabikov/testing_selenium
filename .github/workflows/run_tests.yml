@@ -18,7 +18,7 @@ jobs:
       - name: install dependencies
         run: pip install -r requirements.txt
       - name: Run tests
-        run: pytest tests/test_p.py::test_button_exist --alluredir=allure-results
+        run: pytest tests/test_p.py --alluredir=allure-results
       - name: Store allure results
         uses: actions/upload-artifact@v3
         with:
