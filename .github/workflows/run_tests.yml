@@ -1,11 +1,6 @@
 name: Automated tests
 
-on:
-  workflow_dispatch:
-    inputs:
-      deployment-target:
-        description: Choose target
-        required: true
+on: workflow_dispatch
 
 jobs:
   test:
