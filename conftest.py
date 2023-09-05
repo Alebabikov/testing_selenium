@@ -7,7 +7,8 @@ from selenium.webdriver.chrome.options import Options
 def driver():
     options = Options()
     options.set_capability("acceptInsecureCerts", True)
-    driver = webdriver.Remote(command_executor='http://192.168.1.158:4444/wd/hub', options=options)
+    options.add_argument('--headless')
+    driver = webdriver.Chrome(options=options)
     driver.maximize_window()
     yield driver
     driver.quit()
