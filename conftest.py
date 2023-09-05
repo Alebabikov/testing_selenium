@@ -7,6 +7,8 @@ from selenium.webdriver.chrome.options import Options
 def driver():
     options = Options()
     options.set_capability("acceptInsecureCerts", True)
+
+    # запуск без открытия браузера
     options.add_argument('--headless')
     driver = webdriver.Chrome(options=options)
     driver.maximize_window()
